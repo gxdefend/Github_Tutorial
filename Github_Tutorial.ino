@@ -13,6 +13,7 @@
 
 void setup()
 {
+  
   Serial.begin(9600);
   Serial.println("Trimpot read example");
 
@@ -21,7 +22,7 @@ void setup()
 
 void loop() 
 {
-  byte myValue = 0;
+  int myValue = 0;
   myValue = analogRead(A0);
   
   Serial.print("The value is: ");
